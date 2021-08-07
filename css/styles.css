@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Press Start 2p';
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+body {
+    background-image: url('../assets/background.PNG');
+    font-size: 30pt;
+    font-family: 'Press Start 2p';
+    overflow: hidden;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(-90deg, red, orange);
+}
+
+::-webkit-scrollbar-track {
+    background: #444;
+}
+
+#player {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    width: 10%;
+}
+
+.italic {
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/* Game screen styles */
+
+#game-screen {
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    margin-left: 15vw;
+    margin-top: 1rem;
+    box-shadow: -15px 0 0 0 orangered, 15px 0 0 0 orangered, 0 -15px 0 0 orangered, 0 15px 0 0 orangered;
+}
+
+#story-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* END Game screen styles */
+
+
+/* Story box styles*/
+
+
+/* Inspired from https://codepen.io/RenatoFringuello/details/LYyYqpq */
+
+#screen-separator {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 5px;
+    background: -webkit-linear-gradient(0deg, red, orange);
+}
+
+#story-box {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    scrollbar-color: #f60 #444;
+    overflow-y: scroll;
+}
+
+#hide-story-btn {
+    position: absolute;
+    right: 0%;
+    top: 20px;
+    width: 15%;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(0deg, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/* END Story box styles */
+
+
+/* Actions box styles */
+
+#actions-box {
+    background: black;
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    box-shadow: -15px 0 0 0 orangered, 15px 0 0 0 orangered, 0 -15px 0 0 orangered, 0 15px 0 0 orangered;
+}
+
+#actions-switch-btn {
+    position: absolute;
+    right: 1%;
+    bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 8%;
+    height: 10%;
+    padding: 10px 0 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+}
+
+
+/* END Actions box styles */
+
+
+/* Decisions box styles */
+
+#decisions-box {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: grey;
+    cursor: pointer;
+}
+
+#decision-option-1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 50%;
+    height: 50%;
+}
+
+#decision-option-2 {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 49%;
+    height: 50%;
+    border-left: 15px orangered solid;
+}
+
+#decision-option-3 {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    height: 45%;
+    border-top: 15px orangered solid;
+}
+
+#decision-option-4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 49%;
+    height: 45%;
+    border-left: 15px orangered solid;
+    border-top: 15px orangered solid;
+}
+
+
+/* END Decisions box styles */
+
+
+/* Directions box styles */
+
+
+/* Credits to snippet author: https://codepen.io/reulison/pen/WNNVPZq */
+
+.direction-btn {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    width: 20%;
+    height: 20%;
+    padding: 10px 0 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+}
+
+.up-btn {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.up-btn:active {
+    box-shadow: none;
+    position: absolute;
+    top: 8%;
+}
+
+.down-btn {
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+}
+
+.down-btn:active {
+    box-shadow: none;
+    position: absolute;
+    bottom: 12%;
+}
+
+.left-btn {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.left-btn:active {
+    box-shadow: none;
+    position: absolute;
+    top: 38%;
+}
+
+.right-btn {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+.right-btn:active {
+    box-shadow: none;
+    position: absolute;
+    top: 38%;
+}
+
+
+/* END Directions box styles */

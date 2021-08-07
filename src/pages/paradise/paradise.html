@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - Paradise</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/paradise.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>PARADISE</h3>
+            <h1>Into the Empyrean</h1>
+            <h4>You ascend the golden ladder and arrive in Gemini, under the sign you have been born. From here, you look down on the poor little earth far below, then upwards to see the shining light of Christ himself, above his triumphant armies. You look
+                up again to see the Virgin Mary surrounded by the Archangel Gabriel.</h4>
+            <h4>The apostles Peter, James and John, examine you in sequence on the Christian virtues of faith, hope and love, respectively.</h4>
+            <h4>The questions you've sought after in your time as a mortal being are answered, as the origin of time is revealed to you.</h4>
+            <h4>One final ascent towards Empyrean, the mind of God which exists beyond time and space – the real home of the angels, and of all the spirits in celestial heaven. Here you see a river of light which transforms into a circle, in which angels
+                leap out like sparks from the light into the flowers of blessed spirits on its banks.</h4>
+            <h4>This circle then changes into a celestial white rose, in which are thousands of tiers of spirits. You see past the light to understand how the universe is held together by God’s love. Your closing visions are of the Holy Trinity as three circles
+                and the mystery of the Incarnation.</h4>
+            <h4>Your journey is now complete.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Peace and quiet</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn" onclick="noWayBack()">DOWN</a>
+            <a class="direction-btn left-btn">LEFT</a>
+            <a class="direction-btn right-btn">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        function noWayBack() {
+            alert('Cannot return to Purgatory.');
+        }
+
+        function decisionOne() {
+            alert('All that you feel now is peace and quite. Your soul can now rest for all eternity.');
+        }
+    </script>
+</body>
+
+</html>

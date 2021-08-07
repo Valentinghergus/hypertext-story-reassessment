@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Proud</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/theproud.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE PROUD</h3>
+            <h3>ENTRANCE</h3>
+            <h1>Embrace your humility</h1>
+            <h4>As you and Virgil work your way through moving rocks, you are haunted by the spirits of those who suffered from pride, the first of the Seven Deadly Sins.</h4>
+            <h4>Without them speaking, your voices echo through your head. You slowly feel as if you are losing control over your emotions. Your sense of self starts to grow tenfold.</h4>
+            <h4>You begin grinning as you remember all the times in your life when you were superior to others, when you acted on your pride alone, when you've stepped on your commrades for your own gain.</h4>
+            <h4>Your body feels so light, so light you feel like flying. It feels as wings have grown on your back.</h4>
+            <h4>As Virgil grabs quickly onto a rock that he places on his back, and begins chanting a prayer.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Place a heavy rock on your back</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>Chant the prayer</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>Attempt to fly</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn" onclick="noGoingBack()">DOWN</a>
+            <a class="direction-btn left-btn">LEFT</a>
+            <a class="direction-btn right-btn" href="room101.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        function noGoingBack() {
+            alert('You have entered the purgatory and cannot leave. Repent your sins or become a tormented soul for all eternity. There is no other way.');
+        }
+
+        function decisionOne() {
+            alert('You place a rock on your back. Your sense of self begins returning to you, and you start thinking more clearly.');
+        }
+
+        function decisionTwo() {
+            alert('You follow Virgil and begin chanting. The weight on your back feels lighter now. The sound of the prayer blocks the spirits voices in your head.');
+        }
+
+        function decisionThree() {
+            alert('Your body starts to slowly desintegrate. Your memories become blurier with each second. Who are you? Remember!');
+        }
+    </script>
+</body>
+
+</html>

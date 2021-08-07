@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Proud</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/theproud3.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE PROUD</h3>
+            <h3>LUCIFER'S TEMPLE</h3>
+            <h1>Repent all your bad love</h1>
+            <h4>You have reached a room full of illustrations of Lucifer, the prideful fallen angel.</h4>
+            <h4>The statue of the ruler of Hell has three faces: one looking forward is bright red, that on the right a dirty yellow, and on the left black. Behind each face is a pair of vane-like wings which are fanning the ice-cold wind blowing across Lake
+                Cocytus. His six eyes are weeping, and each mouth is chewing one of the souls from that pit of Hell. Virgil points out that one of them, whose legs protrude from Lucifer’s lips, is Judas Iscariot, who betrayed Jesus Christ for thirty pieces
+                of silver. The other two are Brutus and Cassius, being punished for their assassination of Julius Caesar.</h4>
+            <h4>An angel guards the statue of the embodiment of Pride, Envy, and Wrath.</h4>
+            <h4>He looks at you and asks if you are ready to repent. He tells you only those who have understood what bad love is, and are ready to repent it, can move up the Purgatory.</h4>
+            <h4>He awaits your answer.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Answer the angel</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>Ask for guidance</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn">DOWN</a>
+            <a class="direction-btn left-btn" href="room101.html">LEFT</a>
+            <a class="direction-btn right-btn">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        function decisionOne() {
+            var answer = prompt('Please enter your answer: ', 'answer');
+            if (answer.toUpperCase() == 'AMOR VINCIT OMNIA') {
+                alert('Your sins of pride, envy, and wrath shall be repented.');
+                alert('The angel flies you and Virgil to the fourth floor.')
+                window.location.href = "../fourthfloor/room401.html";
+            } else {
+                alert('This is not the answer. You are not ready to move on yet.');
+            }
+        }
+
+        function decisionTwo() {
+            alert('Once you have conquered all floors of bad love, the answer will be shown to you. Remember, love conquers all.');
+        }
+    </script>
+</body>
+
+</html>

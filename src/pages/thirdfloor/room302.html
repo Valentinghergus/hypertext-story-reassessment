@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Wrathful</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/thewraith.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE WRATHFUL</h3>
+            <h3>HALLWAYS</h3>
+            <h1>God's wrath is only the face of love refused</h1>
+            <h4>While guided to the third floor of the Purgatory by one of the guardian angels, Virgil explains to you how spiritual love can only grow as more share it.</h4>
+            <h4>On this floor, the souls of the dead rid themselves of wrath, the third of the Seven Deadly Sins.</h4>
+            <h4>The souls who in their previous life had tortured, punished, hurt, and destroyed through their uncontrollable wrath, are now forced to go through the same pain they had caused.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn" href="../secondfloor/room202.html">DOWN</a>
+            <a class="direction-btn left-btn" href="room301.html">LEFT</a>
+            <a class="direction-btn right-btn" href="room303.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+</body>
+
+</html>

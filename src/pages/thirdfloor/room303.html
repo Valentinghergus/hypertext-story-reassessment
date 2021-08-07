@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Wrathful</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/thewraith3.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE WRATHFUL</h3>
+            <h3>BURNING FURY</h3>
+            <h1>Your sin is not greater than God's mercy</h1>
+            <h4>A long bridge over the molten lava river that leads to a sphere so bright that it is hard to look in its direction.</h4>
+            <h4>An angel awaits at the end, watching you from afar.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Walk towards the sphere</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>Forgive yourself</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>Forgive those who have hurt you</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn">DOWN</a>
+            <a class="direction-btn left-btn" href="room302.html">LEFT</a>
+            <a class="direction-btn right-btn">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        var forgiveYourself = false;
+        var forgiveOthers = false;
+
+        function decisionOne() {
+            if (forgiveYourself == true && forgiveOthers == true) {
+                alert('Your mercy has protected you from the flames of the molten lava river.');
+                alert('The angel admires you for abandoning your wrath. He offers you guidance with the latin words of Love conquers all.');
+                alert('The sphere begins radiating the latin word OMNIA.');
+            } else {
+                alert('Hot flames begin jumping out of the molten river as you begin traversing the bridge. You quickly retreat.');
+            }
+        }
+
+        function decisionTwo() {
+            forgiveYourself = true;
+            alert('You forgive yourself. This puts your soul at rest as you begin feeling an aura engulfing your body.');
+        }
+
+        function decisionThree() {
+            forgiveOthers = true;
+            alert('You forgive the ones who hurt you in their wrath. This puts your soul at rest as you begin feeling an aura engulfing your body.');
+        }
+    </script>
+</body>
+
+</html>

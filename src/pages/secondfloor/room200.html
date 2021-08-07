@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Envy</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/theenvy.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE ENVY</h3>
+            <h3>LOBBY</h3>
+            <h1>Rejoice your self</h1>
+            <h4>The second floor of Purgatory contains those souls who have to cleanse themselves of envy, the second of the Seven Deadly Sins. Here, disembodied voices keep flying past to remind the penitents of the value of the opposite of envy, selfless
+                love. The spirits here are like hunting birds under training, in that their eyelids are sewn together with iron wire to make them blind.</h4>
+            <h4>Your soul feels at rest. Nor you nor Virgil have envied anyone or anything in your past lives. An angel takes notice of you, and offers to guide you to the next floor.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn" href="../firstfloor/room101.html">DOWN</a>
+            <a class="direction-btn left-btn">LEFT</a>
+            <a class="direction-btn right-btn" href="room201.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+</body>
+
+</html>

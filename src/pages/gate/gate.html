@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - Purgatory Gate</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/gate-entrance.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>PURGATORY GATE</h3>
+            <h1>Enter the Purgatory</h1>
+            <h4 class="italic">Your journey long and far has been,</h4>
+            <h4 class="italic">Traversing hell through thick and thin,</h4>
+            <h4 class="italic">But a new end will now begin,</h4>
+            <h4 class="italic">A soul of all its sins to clean.</h4>
+            <h4>Virgil looks at you and nods his head. The look in his eyes feels reassuring, but you can't help but feel the terror of what's in front of you.
+                <br /><br /> All the tragedies of the nine circles of hell had left a deep scar on your mind.
+                <br /><br /> And what's ahead is worse than that. To cleanse your soul of all your sins, and prove to God you belong alongside his godly creations is no easy feat. Especially with such a heavy burden of your past life.
+                <br /><br />'I do not feel as if I belong in Paradise... 'Maybe I should just live with the excommunicated for all eternity', you say in a deafeted voice.
+                <br /><br />Virgil understands. The chances of becomming a tormented spirit in the purgatory, losing all self, all that's left of your humanity is the reason why not many even consider climbing up the purgatory. 'Do not stray from your
+                path.
+                <br /><br />You must look towards the future, and let go of your past. That is the only way to achieve peace.', responds Virgil. The decision is now yours to make: will you dare open the gates of purgatory without ever coming back, or
+                will you remain behind for all eternity to come?
+            </h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>"I shall face my destiny."</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>"I am too afraid. I must go back."</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn" href="../firstfloor/room100.html ">UP</a>
+            <a class="direction-btn down-btn">DOWN</a>
+            <a class="direction-btn left-btn">LEFT</a>
+            <a class="direction-btn right-btn">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions() ">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js"></script>
+    <script>
+        function decisionOne() {
+            alert('Virgil approves of your words. He gives you a big grin and pats your back.');
+        }
+
+        function decisionTwo() {
+            alert('Virgil looks at you in disgust. He thought you are a much bigger man than this.')
+        }
+
+        function decisionThree() {
+
+        }
+
+        function decisionFour() {
+
+        }
+    </script>
+</body>
+
+</html>

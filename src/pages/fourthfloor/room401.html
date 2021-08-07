@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Slothful</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/thesloth2.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE SLOTHFUL</h3>
+            <h3>PASSAGE</h3>
+            <h1>Go slow, but go</h1>
+            <h4>The angel drops you and Virgil on the passage towards the fourth floor, the floor of the sin of sloth.</h4>
+            <h4>He warns that the passage ahead will take as long to reach the end, as slothful one is.</h4>
+            <h4>Some never reach the end, as their souls are exhausted from the never-ending trip.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn">UP</a>
+            <a class="direction-btn down-btn" href="../firstfloor/room102.html">DOWN</a>
+            <a class="direction-btn left-btn">LEFT</a>
+            <a class="direction-btn right-btn" href="room402.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+</body>
+
+</html>

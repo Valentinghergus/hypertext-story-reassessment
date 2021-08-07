@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Proud</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/theproud2.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE PROUD</h3>
+            <h3>HALLWAYS</h3>
+            <h1>Learn from your elders</h1>
+            <h4>As you move around the dungeon, you see further sculptures showing the famously proud, figures such as Niobe whose fourteen children were slain for her pride. herself to a contest.</h4>
+            <h4>Arachne was so proud of her weaving that she challenged Pallas Athena (Minerva)Although by her achievements Arachne should have won, her tapestries were scathingly critical of the gods, and Athena flew into a rage. Although Arachne’s life
+                was spared, she was transformed into a spider and condemned to spin webs forever.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Admire their feats</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>Pitty their behaviour</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn" href="../secondfloor/room200.html">UP</a>
+            <a class="direction-btn down-btn">DOWN</a>
+            <a class="direction-btn left-btn" href="room100.html">LEFT</a>
+            <a class="direction-btn right-btn" href="room102.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        function decisionOne() {
+            alert('The statues begin to tremble as if laughing. A shiver runs down your spine as your soul feels as if being dragged inside them.')
+        }
+
+        function decisionTwo() {
+            alert('The statues begin to tremble as if they were shaking in anger. Your body is slowly pushed around the room, but your rock anchors you to the ground.')
+        }
+    </script>
+</body>
+
+</html>

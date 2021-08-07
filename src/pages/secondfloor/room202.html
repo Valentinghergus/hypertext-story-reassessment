@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dante's Inferno - The Envy</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <audio id="player" autoplay controls loop><source src="../../../assets/bgmusic.mp3" type="audio/mp3"></audio>
+    <div id="game-screen">
+        <img id="story-background" src="../../../assets/theenvy3.png" />
+        <div id="story-box">
+            <div id="hide-story-btn" onclick="switchStoryBoxVisibility()">Hide Story</div>
+            <h3>THE ENVY</h3>
+            <h3>TREASURE ROOM</h3>
+            <h1>He who envies others does not obtain peace of mind</h1>
+            <h4>You reach a room that contains a grandious treasure chest.</h4>
+            <h4>The angel advices you that you should only open it if your soul is free of envy. Those before you that envied the riches they did not have, or the people they could not touch, have gone corrupted with the jealousy of the treasure.</h4>
+        </div>
+        <div id="screen-separator"> </div>
+    </div>
+    <div id="actions-box">
+        <div id="decisions-box">
+            <div id="decision-option-1" onclick="decisionOne()">
+                <p>Open the treasure chest</p>
+            </div>
+            <div id="decision-option-2" onclick="decisionTwo()">
+                <p>Clear your mind</p>
+            </div>
+            <div id="decision-option-3" onclick="decisionThree()">
+                <p>X</p>
+            </div>
+            <div id="decision-option-4" onclick="decisionFour()">
+                <p>X</p>
+            </div>
+        </div>
+        <div id="directions-box">
+            <a class="direction-btn up-btn" href="../thirdfloor/room302.html">UP</a>
+            <a class="direction-btn down-btn">DOWN</a>
+            <a class="direction-btn left-btn" href="room201.html">LEFT</a>
+            <a class="direction-btn right-btn" href="room203.html">RIGHT</a>
+        </div>
+        <div id="actions-switch-btn" onclick="swapDecisionBoxOptions()">SWAP</div>
+    </div>
+
+    <script src="../../../src/js/scripts.js "></script>
+    <script>
+        var clearedMind = false;
+
+        function decisionOne() {
+            if (clearedMind == true) {
+                alert('You open the treasure chest. It shows only a scripture with the latin word VINCIT engraved on it.');
+            } else {
+                alert('The angel stops you before you reach for the chest. He warns that he can sense you do not have a clear mind.');
+            }
+        }
+
+        function decisionTwo() {
+            clearedMind = true;
+
+            alert('You cleared your mind from all your corrupted thoughts.');
+        }
+    </script>
+</body>
+
+</html>

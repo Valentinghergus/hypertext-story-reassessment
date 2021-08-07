@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+body {
+    background-image: url('../assets/background.PNG');
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    /* Resize the background image to cover the entire container */
+    text-align: center;
+    user-select: none;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    color: red;
+    font-weight: 900;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#instructions {
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: orangered;
+}
+
+h4 {
+    color: white;
+}
+
+#game-start-btn {
+    text-decoration: none;
+    color: red;
+    font-size: 50px;
+    font-weight: 900;
+}
